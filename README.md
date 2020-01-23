@@ -2,7 +2,7 @@
 
 ## Merging datasources
 
-We have one data source.
+We have one data source: a folder with json files. Each file contains a json object.
 
 
 ```json
@@ -14,16 +14,16 @@ We have one data source.
 ```
 ```json
 { 
-  "target_path": "/code1/code2/code3",
+  "target_path": "/code1/code2",
   "time": "2020-01-23",
-  "count": 13
+  "count": 5
 }
 ```
 ```json
 { 
-  "target_path": "/code1/code2",
+  "target_path": "/code1/code2/code3",
   "time": "2020-01-23",
-  "count": 5
+  "count": 13
 }
 ```
 ```json
@@ -43,7 +43,7 @@ We have one data source.
 ```
 
 
-The idea is to merge those data and end up with a count for each matching hierarchy.
+The idea is to aggregate those data and end up with a count for each matching hierarchy level extracted from `target_path`.
 
 In this example, the expected output is
 ```json
