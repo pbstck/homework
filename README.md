@@ -1,6 +1,6 @@
 # Homework
 
-## Merging datasources
+## Aggregating data
 
 We have one data source: a folder with json files. Each file contains a json object.
 
