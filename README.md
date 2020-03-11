@@ -75,9 +75,19 @@ where the first element is the top level aggregation "code1" with a count of 45 
 
 ### Work
 
-Your job is to implement the funtion `merge` in main.py.
+Your job is to implement the program that will perform the merge shown above. You can code in the language of your choice.
+Your program will take as a single argument the path to the folder containing the datasource.
 
-It takes as the only argument the path to a folder containing all the json files
+```
+./homework path/to/datasource
+```
 
-It returns an array of objects ( containing `target`, `time` and `count` ) ordered by `time` then `target` hierarchy
+The expected output file should be name as follow: `<datasource-folder-name>-agg.json`, the file has to be placed at the same level as the datasource folder.
 
+In order to test the homework, we will issue the following command:
+
+```
+./homework-check homework path/to/datasource
+```
+
+Which will execute your program with the datasource path as the first argument as stated in the first paragraph and check the output.
