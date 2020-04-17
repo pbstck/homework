@@ -91,3 +91,9 @@ In order to test the homework, we will issue the following command:
 ```
 
 Which will execute your program with the datasource path as the first argument as stated in the first paragraph and check the output.
+
+Also, feel free to override this README in order to provide informations and context on:
+* the language you are using
+* the development environment used
+* the framework(s) you are using
+* anything you think might be relevant for us to understand your choices.
